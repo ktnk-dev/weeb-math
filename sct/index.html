@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблица Брадеса</title>
+    <link rel="stylesheet" href="../storage/css/header.css">
+    <link rel="stylesheet" href="../storage/css/menu.css">
+
     <style>
 
 p{margin: 0;padding: 0;}
@@ -24,84 +27,6 @@ body{
 
 
 }
-header{
-    width: 100%;
-    display: flex;
-    height: 40px;
-    background-color: #222;
-    /* position: fixed; */
-    justify-content: space-around;
-    
-}
-@media(max-width: 498px) {
-    body{
-        grid-template-rows: 80px auto;
-
-    }
-    header{
-        height: 80px;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-    .ht{
-        transition: all .5s;
-
-        width: 33.33%;
-        text-align: center;
-    }
-    .custom{
-        width: 100%;
-        text-align: center;
-        background-color: #1d1d1d;
-    }
-
-    
-}
-.h-tabs{
-    display: flex;
-    flex-direction: row;
-    margin: 0;padding: 0;
-    height: 100%;
-    justify-content: center;
-    font-family: monospace;
-    font-size: 15px;
-}
-.ht{
-    margin: 0;
-    padding: 10px 25px;
-    color: #bbb;
-    font-family: monospace;
-    transition: all .3s;
-
-
-}
-.ht:hover{
-    color: #ccc;
-    background-color: #2a2a2a;
-
-}
-#tactive{
-
-    color: #fff;
-    background-color: #333;
-    border-style: solid;
-    border-width: 0;
-    border-color: #aaa;
-    border-bottom-width: 3px;
-
-    
-}
-#unactive{
-    border-style: solid;
-    border-width: 0;
-    border-color: #222;
-    border-top-width: 0px;
-
-    
-
-}
-
 
 
 .data{
@@ -164,21 +89,29 @@ header{
     /* border: solid 1px #444; */
     height: 25px;
 }
+
 .result{
     text-align: start;
     padding: 5px 2px;
     width: 100%;
     /* border-left: 1px solid #333; */
     background-color: #252525;
+    transition:  all .2s;
+}
+.result:hover{
+    background-color: #292929;
 }
 .deg{
     margin: 0;
     padding: 3px 5px 0; 
-
+    transition:  all .2s;
     font-size: 16px; 
     text-align: end; 
     background-color: #333; 
 
+}
+.deg:hover{
+    background-color: #363636;
 }
 
 #firstrun{
@@ -188,42 +121,17 @@ header{
     margin: 30px;
 }
 
-.mt{
-    text-decoration: none;
-    padding: 2px 4px;
-    margin: 0 1px;
-    
-    height: 20px;
-    color: rgba(255,255,255,0.1);
-    background-color: rgba(66,66,66,0.1);
-    transition: all .4s;
 
-}
-.menu{
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    height: 20px;
-    width: 100%;
-    text-align: center;
-    font-family: monospace;    
-    transition: all .2s;
-    background-color: rgba(77,77,77,0.1);
-    justify-content: space-between;
-}
-
-.mt:hover{
-    background-color: rgba(66,66,66,0.9);
-    color: white;
-    
-}
 
     </style>
 </head>
 <body>
     <div class="menu" >
-        <a href="../" class="mt">cd ../</a>
-        <div style="display: flex;">
+        <div class="ma">
+            <a href="../" class="mt">cd ../</a>
+         
+        </div>
+        <div style="display: flex;" class="mg">
 
             <a href="https://github.com/ktnk-dev/weeb-math/blob/main/sct" class="mt">git</a>
             <a href="https://github.com/ktnk-dev" class="mt">@ktnk-dev</a>
