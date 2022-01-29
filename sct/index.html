@@ -188,9 +188,40 @@ header{
     margin: 30px;
 }
 
+.mt{
+    text-decoration: none;
+    padding: 2px 4px;
+    
+    height: 20px;
+    color: rgba(255,255,255,0.1);
+    background-color: rgba(66,66,66,0.1);
+    transition: all .4s;
+
+}
+.menu{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: monospace;    
+    transition: all .2s;
+}
+
+.mt:hover{
+    background-color: rgba(66,66,66,0.9);
+    color: white;
+}
+
     </style>
 </head>
 <body>
+    <div class="menu" >
+        <a href="../" class="mt">cd ../</a>
+        
+
+    </div>
     <header>
         <div class="h-tabs">
         
