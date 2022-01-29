@@ -107,7 +107,7 @@ header{
 .data{
     height: auto;
     max-height: 100%;
-    margin: 10px auto;
+    margin: 10px auto 30px;
     color: #ddd;
     font-family: monospace;
     overflow-y: auto;
@@ -191,6 +191,7 @@ header{
 .mt{
     text-decoration: none;
     padding: 2px 4px;
+    margin: 0 1px;
     
     height: 20px;
     color: rgba(255,255,255,0.1);
@@ -207,11 +208,14 @@ header{
     text-align: center;
     font-family: monospace;    
     transition: all .2s;
+    background-color: rgba(77,77,77,0.1);
+    justify-content: space-between;
 }
 
 .mt:hover{
     background-color: rgba(66,66,66,0.9);
     color: white;
+    
 }
 
     </style>
@@ -219,6 +223,12 @@ header{
 <body>
     <div class="menu" >
         <a href="../" class="mt">cd ../</a>
+        <div style="display: flex;">
+
+            <a href="https://github.com/ktnk-dev/weeb-math/blob/main/sct" class="mt">git</a>
+            <a href="https://github.com/ktnk-dev" class="mt">@ktnk-dev</a>
+
+        </div>
         
 
     </div>
